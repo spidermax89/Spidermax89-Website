@@ -1,0 +1,271 @@
+    body {
+        background-color: rgb(36, 36, 36);
+        font-family: 'Comfortaa', cursive;
+        color: white;
+        margin: 0px;
+    }
+
+    .Footer{
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .Info{
+        float: left;
+        padding-left: 47px;
+        padding-top: 5px;
+    }
+    .Social i{
+        margin: 5px;
+        transition: 0.3s;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 20px;
+    }
+
+    .DownloadList{
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    tr:nth-child(even){
+        background-color: rgba(70, 70, 70, 0.314);
+    }
+
+    td a{
+        text-decoration: none;
+        color: white;
+    }
+
+    td, th{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .VideoWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: column;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        transition: 0.5s;
+    }
+
+    .Video{
+        background-color: #47474797;
+        width: 80%;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .Video h3:hover{
+        color: lightblue;
+        transition: 0.3s;
+    }
+
+    .Video button{
+        background: rgb(53, 53, 255);
+        border: none;
+        color: white;
+        padding: 8px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+        display: flex;
+    }
+
+    .Video button:hover{
+        background: rgb(15, 15, 255);
+        transition: 0.5s;
+    }
+
+    .Video img{
+        margin: 20px;
+        vertical-align: middle;
+    }
+
+    .Video h3{
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    @media(min-width: 700px){
+        .Video img{
+            float: left;
+        }
+
+        .Video h3{
+            margin-top: 30px!important;
+            margin-bottom: 10px!important;
+        }
+    }
+    @media(max-width: 700px){
+        .Video img{
+            float: none;
+            margin-bottom: 10px;
+        }
+
+        .Video h3{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    @media(min-width: 435px){
+        .Social{
+            float: right;
+            padding-right: 47px;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .Social i:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+            color: rgb(255, 255, 255);
+            transition: 0.3s;
+        }
+    }
+
+    @media(max-width: 435px){
+        .Social{
+            float: left;
+            padding-left: 47px;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    }
+
+    @media(min-width: 800px){
+
+        .OpenButton{
+            display: none;
+        }
+
+        .Nav{
+            overflow: hidden;
+            background-color: #333;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0px 0px;
+        }
+
+        .Nav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .Nav .ThemeSetting{
+            float: right;
+            text-align: center;
+            padding: 14px 16px;
+            margin-right: 10px;
+            display: block;
+            background: none;
+            border: none;
+            color: white;
+            font-family: 'Comfortaa', cursive;
+            font-size: 16px;
+        }
+
+        .Nav .ThemeSetting:hover{
+            cursor: pointer;
+        }
+
+        .Nav a:hover{
+            background-color: black;
+            transition: 0.2s;
+        }
+
+        .closebtn{
+            display: none;
+        }
+
+        .Nav .ThemeText{
+            display: none;
+        }
+    }
+
+    @media(max-width: 800px){
+        .imgText h1{
+            top: 35px;
+        }
+
+        .bg{
+            display: none;
+        }
+
+        .Nav{
+            height: 100%;
+            width: 0px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+
+        .Nav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #ffffff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .Nav .closebtn {
+            position: absolute;
+            top: 0;
+            font-size: 36px;
+        }
+
+        .closebtn{
+            background: none;
+            color: #ffffff;
+            border: none;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .OpenButton{
+            background: none;
+            border: none;
+            color: white;
+        }
+
+        .Nav .ThemeSetting{
+            float: left;
+            text-align: center;
+            padding: 14px 16px;
+            padding: 8px 8px 8px 32px;
+            display: block;
+            background: none;
+            border: none;
+            color: white;
+            font-family: 'Comfortaa', cursive;
+            font-size: 16px;
+        }
+
+        .Nav .ThemeText{
+            float: right;
+            margin-top: 0px;
+            margin-left: 5px;
+        }
+    }

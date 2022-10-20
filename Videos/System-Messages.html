@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<style>
+
+    body {
+        background-color: rgb(36, 36, 36);
+        font-family: sans-serif;
+        color: white;
+    }
+
+    .Footer{
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .Info{
+        float: left;
+        padding-left: 47px;
+        padding-top: 5px;
+    }
+    .Social i{
+        margin: 5px;
+        transition: 0.3s;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 10px;
+    }
+
+    button{
+        background: rgb(53, 53, 255);
+        border: none;
+        color: white;
+        padding: 8px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    @media(min-width: 435px){
+        .Social{
+            float: right;
+            padding-right: 47px;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .Social i:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+            color: rgb(255, 255, 255);
+            transition: 0.3s;
+        }
+    }
+
+    @media(max-width: 435px){
+        .Social{
+            float: left;
+            padding-left: 47px;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    }
+
+    @media(min-width: 800px){
+
+        .OpenButton{
+            display: none;
+        }
+
+        .Nav{
+            overflow: hidden;
+            background-color: #333;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0px 0px;
+        }
+
+        .Nav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .Nav a:hover{
+            background-color: black;
+            transition: 0.2s;
+        }
+
+        .closebtn{
+            display: none;
+        }
+    }
+
+    @media(max-width: 800px){
+        .imgText h1{
+            top: 35px;
+        }
+
+        .bg{
+            display: none;
+        }
+
+        .Nav{
+            height: 100%;
+            width: 0px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 60px;
+            transition: 0.5s;
+        }
+
+        .Nav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .Nav .closebtn {
+            position: absolute;
+            top: 0;
+            font-size: 36px;
+        }
+
+        .closebtn{
+            background: none;
+            color: #818181;
+            border: none;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .OpenButton{
+            background: none;
+            border: none;
+            color: white;
+        }
+    }
+</style>
+
+<head>
+    <title>Video</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/Assets/Logo2021Square.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Spidermax89 | Homepage">
+    <meta property="og:description" content="Welcome, this site is coming very soon!">
+    <meta property="og:auther" content="Spidermax89">
+    <meta property="og:keywords" content="spidermax89, Spidermax89, Spidermax89 YouTube">
+    <script src="https://kit.fontawesome.com/e25ff50d7b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="Nav" id="Nav">
+            <button class="closebtn" onclick="closeNav()">&times;</button>
+            <a href="/Home.html?Visited=Yes">Home</a>
+            <a href="/AboutMe.html">About Me</a>
+            <a href="/Work.html">My Work</a>
+            <a href="/Videos.html">Videos</a>
+        </div>
+        <button class="OpenButton" onclick="openNav()"><span class="material-symbols-outlined">menu</span></button>
+    </section>
+
+    <section class="Main">
+            <h3 class="ServerScript" style="font-size: 20px; text-align: center;">Local Script</h3>
+            <div class="Script" style="background-color: black;">
+            <code type="lua" style="line-break:anywhere;" id="LocalScript">
+                <p>local StarterGui = game:GetService("StarterGui")</p>
+
+                <p>local Messages = { -- The messages you would like to send!</p>
+                    <p style="margin-left: 30px;">"Put some messages here",</p>
+                    <p style="margin-left: 30px;">"Like the video",</p>
+                    <p style="margin-left: 30px;">"Sub if you enjoy this video",</p>
+                    <p style="margin-left: 30px;">"Test",</p>
+                    <p style="margin-left: 30px;">"Hello"</p>
+                <p>}</p>
+                
+                <p>local TimeBetweenMessages = 1 -- Time Between each message (In Seconds!)</p>
+                
+                <p>while wait(TimeBetweenMessages) do</p>
+                    
+                    <p style="margin-left: 30px;">StarterGui:SetCore("ChatMakeSystemMessage",{</p> 
+                        <p style="margin-left: 60px;">Text = "[RoBot] " .. Messages[math.random(1,#Messages)],</p> 
+                        <p style="margin-left: 60px;">Color = Color3.new(1, 0.215686, 0.921569), -- Default is Color3.fromRGB(255,255,243)</p>
+                        <p style="margin-left: 60px;">Font = Enum.Font.FredokaOne, -- Default is SourceSansBold</p>
+                        <p style="margin-left: 60px;">TextSize = 18 -- Default is 18 but can be bigger or smaller!</p>
+                    <p style="margin-left: 30px;">})</p>
+                    
+                <p>end</p>
+            </code>
+            </div>
+            <button onclick="CopyCodeLocalScript()" id="LocalCopyButton">Copy Code</button>
+        </div>
+    </section>
+    
+    <br>
+
+    <hr style="margin: 0rem 3rem; opacity: 0.25;">
+
+    <br>
+
+    <section class="Footer">
+        <div class="Info">
+            Site made by Max | Mobey
+        </div>
+
+        <div class="Social">
+            <a href="https://www.youtube.com/channel/UCVrPcuqv1yK6-ep1-FPUTQA"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.twitch.tv/spidermax89"><i class="fa-brands fa-twitch"></i></a>
+            <a href="https://twitter.com/Spidermax89"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </section>
+</body>
+
+<script>
+    function CopyCodeLocalScript() {
+        const text = document.getElementById("LocalScript")
+        const button = document.getElementById("LocalCopyButton")
+        navigator.clipboard.writeText(text.innerText);
+        button.innerText = "Code Copied"
+        setTimeout(() => {
+            button.innerText = "Copy Code";
+        },1000)
+
+    }
+</script>
+
+<script>
+    function openNav() {
+        document.getElementById("Nav").style.width = "250px";
+      }
+      
+      /* Set the width of the sidebar to 0 (hide it) */
+      function closeNav() {
+        document.getElementById("Nav").style.width = "0";
+      }
+</script>

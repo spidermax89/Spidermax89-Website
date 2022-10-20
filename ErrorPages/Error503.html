@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+    <style>
+        body{
+            color: white;
+        }
+        .Holder{
+            text-align: center;
+            margin: 0%;
+            position: absolute;
+            width: 75%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .TextHolder{
+            background-color: rgb(63, 63, 63);
+            align-items: center;
+            justify-content: center;
+            background-size: 20px;
+            padding: 50px 60px;
+            border-radius: 20px;
+        }
+    
+        .TextHolder p{
+            font-size: 35px;
+            margin: 0px;
+        }
+    
+        .TextHolder p2{
+            font-size: 25px;
+        }
+    
+        .ErrorType{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 100px;
+            margin-top: 0px;
+            margin-bottom: 1.5px;
+        }
+    
+        body{
+            font-family: sans-serif;
+            background-image: linear-gradient(to right, rgb(31, 31, 31), rgb(34, 34, 34));
+        }
+    
+        .ErrorMsg{
+            text-align: center;
+        }
+    
+        .HomeButton{
+            margin-top: 30px;
+            background: white;
+            border: 0px;
+            padding: 10px 20px;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+    
+        .ContactButton{
+            margin-top: 30px;
+            background: white;
+            border: 0px;
+            padding: 10px 20px;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            margin-left: 10px;
+            transition: 0.2s;
+        }
+    
+        button:hover{
+            transform: scale(1.1);
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    
+        @media(max-width: 700px){
+            .TextHolder{
+                padding: 25px 30px;
+            }
+    
+            .TextHolder p{
+                font-size: 22px;
+                margin: 0px;
+            }
+    
+            .TextHolder p2{
+                font-size: 15px;
+            }
+        }
+    
+        @media(max-width: 468px){
+            .ContactButton{
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+        }
+    
+    </style>
+
+
+<head>
+    <title>503 Error!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" class="Favicon" type="image/x-icon" href="/Assets/Logo2021Square.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Countdown">
+    <meta property="og:description" content="Welcome, this site is coming very soon!">
+    <meta property="og:auther" content="Spidermax89">
+    <meta property="og:keywords" content="spidermax89, Spidermax89, Spidermax89 YouTube">
+    <script src="https://kit.fontawesome.com/e25ff50d7b.js" crossorigin="anonymous"></script>
+</head>
+
+</html>
+
+<body >
+    <div class="Holder">
+        <div class="TextHolder">
+            <h1 class="ErrorType">503</h1>
+            <p class="ErrorMessage">Service Unavailable!</p>
+            <p2 class="ErrorMessage">It appears that the server has stopped working. Try again later!</p2>
+            <br>
+            <a href="/Home.html?Visited=Yes"><button class="HomeButton">Go Home</button></a>
+            <a href="mailto:maxkmobey@gmail.com?subject=503 Error!"><button class="ContactButton">Tell us about your error!</button></a>
+        </div>
+    </div>
