@@ -21,7 +21,7 @@ function ChangeTheme() {
 if (Theme.getAttribute("href") == "/Assets/CSS/"+DocName+"/DarkMode.CSS" && DocName[1] != ""){
     Theme.setAttribute("href", "/Assets/CSS/"+DocName+"/LightMode.CSS")
     localStorage.setItem("Theme", "light")
-} else if (Theme.getAttribute("href") == "/Assets/CSS/"+DocName+"/DarkMode.CSS" && DocName[1] != ""){
+} else if (Theme.getAttribute("href") == "/Assets/CSS/"+DocName+"/LightMode.CSS" && DocName[1] != ""){
     Theme.setAttribute("href", "/Assets/CSS/"+DocName+"/DarkMode.CSS")
     localStorage.setItem("Theme", "dark")
 } else{
@@ -30,6 +30,5 @@ if (Theme.getAttribute("href") == "/Assets/CSS/"+DocName+"/DarkMode.CSS" && DocN
     }else{
         (Theme.getAttribute("href") == "/Assets/CSS/,Home.html/DarkMode.CSS")
     }
-
 }
 }
