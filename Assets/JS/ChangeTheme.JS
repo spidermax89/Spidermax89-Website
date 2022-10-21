@@ -18,11 +18,18 @@ if (StoredTheme && DocName[1]){
 
 
 function ChangeTheme() {
-if (Theme.getAttribute("href") == "/Assets/CSS/"+DocName+"/DarkMode.CSS"){
+if (Theme.getAttribute("href") == "/Assets/CSS/"+DocName+"/DarkMode.CSS" && DocName[1] != ""){
     Theme.setAttribute("href", "/Assets/CSS/"+DocName+"/LightMode.CSS")
     localStorage.setItem("Theme", "light")
-} else{
+} else if (Theme.getAttribute("href") == "/Assets/CSS/"+DocName+"/DarkMode.CSS" && DocName[1] != ""){
     Theme.setAttribute("href", "/Assets/CSS/"+DocName+"/DarkMode.CSS")
     localStorage.setItem("Theme", "dark")
+} else{
+    if (Theme.getAttribute("href") == "/Assets/CSS/,Home.html/DarkMode.CSS"){
+        (Theme.getAttribute("href") == "/Assets/CSS/,Home.html/LightMode.CSS")
+    }else{
+        (Theme.getAttribute("href") == "/Assets/CSS/,Home.html/DarkMode.CSS")
+    }
+
 }
 }
