@@ -1,0 +1,252 @@
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(51, 51, 51);
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.Wrap{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.Announcments{
+    margin: auto;
+    display: flex;
+    margin-top: 25px;
+    transition: 0.5s;
+    text-align: center;
+    column-gap: 30px;
+    padding-bottom: 20px;
+}
+
+.Announcment{
+    background-color: #47474797;
+    border-radius: 10px;
+    max-width: 250px;
+    min-width: 200px;
+    min-height: 200px;
+    padding: 10px;
+}
+
+.Announcment h1, i{
+    font-size: 18px;
+    margin: 8px 0px;
+}
+
+.Announcment p{
+    font-size: 15px;
+    margin: 0px;
+}
+
+.Announcment button{
+    background: blue;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.Announcment button:hover{
+    background: rgba(0, 0, 255, 0.623);
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.ExperienceWrap{
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    text-align: center;
+}
+
+.experience{
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.SkillsIMG{
+    display: none;
+}
+
+.Footer{
+    background-color: rgba(116, 116, 116, 0.562);
+    padding: 10px;
+}
+
+.Footer .Content{
+   display: block;
+   margin-top: 20px;
+}
+
+.Footer p{
+    margin-bottom: 0px;
+    margin-top: 19px;
+}
+
+.Footer .Content a{
+    padding: 10px;
+}
+
+.Footer .Content a:hover{
+    color: rgba(255, 255, 255, 0.712);
+    cursor: pointer;
+}
+
+
+@media(min-width: 800px){
+
+    
+    .SkillsIMG{
+        display: flex;
+        float: right;
+        margin-right: 10px;
+        max-width: 60%;
+    }
+
+    .ExperienceWrap{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .experience{
+        background-color: #333;
+        padding: 10px;
+        border-radius: 10px;
+        width: 400px;
+        max-width: 400px;
+    }
+
+    .SectionTitle{
+        padding-top: 100px;
+    }
+
+    .OpenButton, .CloseButton{
+        display: none;
+    }
+
+    .NavBar{
+        overflow: hidden;
+        background-color: rgb(61, 61, 61);
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: auto;
+        padding: 0px 0px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .NavBar a{
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 8px 8px 11px;
+        margin: 0px 10px;
+        font-size: 20px;
+        text-decoration: none;
+        transition: 0.2;
+    }
+
+    .NavBar a:hover{
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        text-decoration-color: aqua;
+        text-decoration-thickness: 1px;
+    }
+
+    .NavBar p{
+        float:left;
+        margin: auto;
+        line-height: 24px;
+        vertical-align: middle;
+        color: white;
+        padding: 10px 8px;
+    }
+
+    .sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px){
+
+    .SkillsIMG{
+        display: none;
+    }
+
+    .ExperienceWrap{
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .NavBar{
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 60px;
+        line-break: strict;
+        transition: 0.5s;
+    }
+
+    .NavBar a{
+        padding: 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .NavBarSection{
+        height: 5%;
+    }
+
+    .NavBarSection .OpenButton{
+        background: rgb(31, 31, 31);
+        border-radius: 10px;
+        border: #111;
+        color: white;
+        position: fixed;
+    }
+
+    .NavBar .CloseButton{
+        top: 0;
+        font-size: 36px;
+        background: none;
+        border: none;
+        color: white;
+    }
+
+    .NavBar .CloseButton i{
+        font-size: 25px;
+    }
+
+    .NavBar p{
+        display: none;
+    }
+}
