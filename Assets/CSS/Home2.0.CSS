@@ -97,11 +97,65 @@ body{
 
 .Footer .Content a{
     padding: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 .Footer .Content a:hover{
     color: rgba(255, 255, 255, 0.712);
     cursor: pointer;
+}
+
+.feedback{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback .username{
+    width: 80%;
+    height: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    color: white;
+}
+
+.feedback .Responce{
+    width: 80%;
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    color: white;
+    resize: none;
+}
+
+.feedback .submit{
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.feedback .submit:hover{
+    transition: 0.2s;
+    background-color: #333;
+    transform: scale(1.05);
 }
 
 

@@ -14,6 +14,7 @@
     <script src="/Assets/JS/Nav2.0.JS"></script>
     <script src="/Assets/JS/TitleChanger.JS"></script>
     <script src="https://kit.fontawesome.com/e25ff50d7b.js" crossorigin="anonymous"></script>
+    <script src="/Assets/JS/FeedbackSender.JS"></script>
 </head>
 <body>
     <section class="NavBarSection">
@@ -104,7 +105,11 @@
         <br>
         <hr style="margin: 0rem 3rem; opacity: 0.25;">
         <br>
-        <h1>Adding Very Soon!</h1>
+        <form class="feedback" onsubmit="sendContact(event)">
+            <input type="text" required class="username" id="username" name="fname" placeholder="Discord name. e.g. Max | Mobey#8989"></input><p></p>
+            <textarea type="text" required class="Responce" cols="30" rows="12" id="feedback" name="fname" placeholder="Enter Feedback"></textarea><p></p>
+            <button type="submit" class="submit"><i class="fa fa-solid fa-paper-plane"></i></button>
+        </form>
     </section>
 
     <section class="Footer" >
