@@ -3,6 +3,10 @@ html{
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar{
+    display: none;
+}
+
 body{
     background-color: rgb(51, 51, 51);
     font-family: 'Montserrat', sans-serif;
