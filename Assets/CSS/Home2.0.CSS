@@ -1,3 +1,25 @@
+:root{
+    --bck: rgb(51,51,51); /*Main Back*/
+    --bck2: rgba(105, 105, 105, 0.267); /*IDK*/
+    --bck3: rgb(59, 59, 59); /*IDK*/
+    --bck4: rgb(83, 83, 83); /*IDK*/
+    --bck5: rgb(31, 31, 31); /*IDK*/
+    --bck6: rgb(61, 61, 61); /*Nav Back*/
+    --text: 255,255,255;
+}
+
+.LightMode{
+    --bck: rgb(51,51,51); /*Main Back*/
+    --bck2: rgba(105, 105, 105, 0.267); /*IDK*/
+    --bck3: rgb(59, 59, 59); /*IDK*/
+    --bck4: rgb(83, 83, 83); /*IDK*/
+    --bck5: rgb(31, 31, 31); /*IDK*/
+    --bck6: rgb(61, 61, 61); /*Nav Back*/
+    --text: 0,0,0;
+}
+
+
+
 html{
     height: 100%;
     scroll-behavior: smooth;
@@ -8,12 +30,13 @@ html::-webkit-scrollbar{
 }
 
 body{
-    background-color: rgb(51, 51, 51);
+    background-color: var(--bck);
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: rgb(var(--text));
     height: 100%;
     margin: 0;
     text-align: center;
+    transition: 0.2s;
 }
 
 .Wrap{
@@ -34,12 +57,18 @@ body{
 }
 
 .Announcment{
-    background-color: #47474797;
+    background-color: var(--bck2);
     border-radius: 10px;
     max-width: 250px;
     min-width: 200px;
     min-height: 200px;
     padding: 10px;
+    transition: 0.2s;
+}
+
+.Announcment:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
 }
 
 .Announcment h1, i{
@@ -54,14 +83,15 @@ body{
 
 .Announcment button{
     background: blue;
-    color: white;
+    color: rgb(var(--text));
     padding: 10px;
     transition: 0.5s;
+    border: none;
 }
 
 .Announcment button:hover{
     background: rgba(0, 0, 255, 0.623);
-    color: white;
+    color: rgb(var(--text));
     padding: 10px;
     transition: 0.5s;
     cursor: pointer;
@@ -75,7 +105,6 @@ body{
 }
 
 .experience{
-    background-color: #333;
     padding: 10px;
     border-radius: 10px;
 }
@@ -85,8 +114,9 @@ body{
 }
 
 .Footer{
-    background-color: rgba(116, 116, 116, 0.562);
+    background-color: var(--bck3);
     padding: 10px;
+    transition: 0.2s;
 }
 
 .Footer .Content{
@@ -102,11 +132,11 @@ body{
 .Footer .Content a{
     padding: 10px;
     text-decoration: none;
-    color: white;
+    color: rgb(var(--text));
 }
 
 .Footer .Content a:hover{
-    color: rgba(255, 255, 255, 0.712);
+    color: rgba(var(--text), 0.712);
     cursor: pointer;
 }
 
@@ -115,7 +145,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     height: 500px;
-    background-color: rgb(36, 36, 36);
+    background-color: var(--bck2);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -128,9 +158,9 @@ body{
     border-radius: 20px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgb(83, 83, 83);
+    background-color: var(--bck4);
     border: none;
-    color: white;
+    color: rgb(var(--text));
 }
 
 .feedback .Responce{
@@ -139,17 +169,17 @@ body{
     border-radius: 20px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgb(83, 83, 83);
+    background-color: var(--bck4);
     border: none;
-    color: white;
+    color: rgb(var(--text));
     resize: none;
 }
 
 .feedback .submit{
     width: 80%;
     border-radius: 20px;
-    background-color: rgb(83, 83, 83);
-    color: white;
+    background-color: var(--bck4);
+    color: rgb(var(--text));
     margin-left: auto;
     margin-right: auto;
     border: none;
@@ -159,7 +189,7 @@ body{
 
 .feedback .submit:hover{
     transition: 0.2s;
-    background-color: #333;
+    background-color: var(--bck5);
     transform: scale(1.05);
 }
 
@@ -182,7 +212,6 @@ body{
     }
 
     .experience{
-        background-color: #333;
         padding: 10px;
         border-radius: 10px;
         width: 400px;
@@ -199,20 +228,20 @@ body{
 
     .NavBar{
         overflow: hidden;
-        background-color: rgb(61, 61, 61);
+        background-color: var(--bck6);
         top: 0px;
         left: 0px;
         width: 100%;
         height: auto;
         padding: 0px 0px;
         position: fixed;
-        z-index: 1;
+        z-index: 3;
     }
 
     .NavBar a{
         float: right;
         display: block;
-        color: white;
+        color: rgb(var(--text));
         text-align: center;
         padding: 10px 8px 8px 11px;
         margin: 0px 10px;
@@ -233,7 +262,7 @@ body{
         margin: auto;
         line-height: 24px;
         vertical-align: middle;
-        color: white;
+        color: rgb(var(--text));
         padding: 10px 8px;
     }
 
@@ -265,7 +294,7 @@ body{
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #111;
+        background-color: var(--bck6);
         overflow-x: hidden;
         padding-top: 60px;
         line-break: strict;
@@ -276,21 +305,26 @@ body{
         padding: 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #ffffff;
+        color: rgb(var(--text));
         display: block;
         transition: 0.3s;
     }
 
     .NavBarSection{
         height: 5%;
+        margin-top: 10px;
     }
 
     .NavBarSection .OpenButton{
-        background: rgb(31, 31, 31);
+        background: var(--bck6);
         border-radius: 10px;
+        padding: 10px;
         border: #111;
-        color: white;
+        color: rgb(var(--text));
         position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
     }
 
     .NavBar .CloseButton{
@@ -298,7 +332,7 @@ body{
         font-size: 36px;
         background: none;
         border: none;
-        color: white;
+        color: rgb(var(--text));
     }
 
     .NavBar .CloseButton i{
