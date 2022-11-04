@@ -2,6 +2,7 @@ on: push
 name: 🚀 Deploy website on push
 jobs:
   web-deploy:
+    if: ${{ github.ref == 'refs/heads/main' }}
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
