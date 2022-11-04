@@ -1,7 +1,5 @@
 let lightMode = localStorage.getItem('lightMode'); 
 
-const lightModeToggle = document.querySelector('#light-mode-toggle');
-
 const enableLightMode = () => {
   document.body.classList.add('lightmode');
   localStorage.setItem('lightMode', 'enabled');
