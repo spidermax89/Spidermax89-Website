@@ -8,6 +8,7 @@
     --text: 255,255,255;
 }
 
+<<<<<<< Updated upstream:Assets/CSS/Home2.0.CSS
 .LightMode{
     --bck: rgb(51,51,51); /*Main Back*/
     --bck2: rgba(105, 105, 105, 0.267); /*IDK*/
@@ -15,6 +16,15 @@
     --bck4: rgb(83, 83, 83); /*IDK*/
     --bck5: rgb(31, 31, 31); /*IDK*/
     --bck6: rgb(61, 61, 61); /*Nav Back*/
+=======
+.lightmode{
+    --bck: rgb(255, 255, 255); /*Main Back*/
+    --bck2: rgba(168, 168, 168, 0.267); /*IDK*/
+    --bck3: rgb(202, 202, 202); /*IDK*/
+    --bck4: rgb(255, 255, 255); /*IDK*/
+    --bck5: rgb(211, 211, 211); /*IDK*/
+    --bck6: rgb(219, 219, 219); /*Nav Back*/
+>>>>>>> Stashed changes:assets/css/main.css
     --text: 0,0,0;
 }
 
@@ -257,6 +267,27 @@ body{
         text-decoration-thickness: 1px;
     }
 
+    .ThemeButton {
+        background-color: rgba(0, 0, 0, 0);
+        float: right;
+        display: block;
+        color: rgb(var(--text));
+        text-align: center;
+        padding: 10px 8px 8px 11px;
+        margin: -4px 8px;
+        font-size: 20px;
+        text-decoration: none;
+        transition: 0.2;
+        border-style: none;
+    }
+
+    .ThemeButton:hover{
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        text-decoration-color: aqua;
+        text-decoration-thickness: 1px;
+    }
+
     .NavBar p{
         float:left;
         margin: auto;
@@ -341,5 +372,20 @@ body{
 
     .NavBar p{
         display: none;
+    }
+
+    .ThemeButton {
+        font-family: 'Montserrat', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        color: rgb(var(--text));
+        text-decoration: none;
+        transition: 0.3s;
+        border-style: none;
+        background: none;
     }
 }

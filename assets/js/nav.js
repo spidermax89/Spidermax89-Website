@@ -6,5 +6,3 @@ function OpenNav() {
 function CloseNav() {
     document.getElementById("NavBar").setAttribute("style", "width: 0px;");
 }
-
-

@@ -1,30 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <title id="WebTitle">Spidermax89 | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/Assets/CSS/Home2.0.CSS">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<<<<<<< Updated upstream
     <link rel="icon" type="image/x-icon" href="/Assets/images/Logo2021Square.png">
     <script src="/Assets/JS/Nav2.0.JS"></script>
     <script src="https://kit.fontawesome.com/e25ff50d7b.js" crossorigin="anonymous"></script>
     <script src="/Assets/JS/FeedbackSender.JS"></script>
+=======
+    <link rel="icon" type="image/x-icon" href="assets/img/Logo2021Square.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <! CSS Linking Below>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <! JS Linking Below>
+    <script src="assets/js/feedback.js"></script>
+    <script src="assets/js/nav.js"></script>
+>>>>>>> Stashed changes
 </head>
 <body>
     <section class="NavBarSection">
         <div class="NavBar" id="NavBar">
-            <button class="CloseButton" onclick="CloseNav()"><i class="fa-solid fa-xmark"></i></button>
-            <a onclick="HomeClick()" href="#Home">Home</a>
-            <a onclick="SkillsClick()" href="#Skills">Skills</a>
-            <a href="#Feedback">Feedback</a>
+            <button class="CloseButton" onclick="CloseNav()"><i class="fa fa-window-close"></i></button>
+            <a onclick="HomeClick()" href="/#Home">Home</a>
+            <a onclick="SkillsClick()" href="/#Skills">Skills</a>
+            <a href="/#Feedback">Feedback</a>
+            <button class="ThemeButton" id="light-mode-toggle">Theme <i id="ThemeIcon" class= "fas fa-sun"></i></button>
+            <script src="assets/js/theme.js"></script>
             <p>Spidermax89</p>
         </div>
-        <button class="OpenButton" onclick="OpenNav()"><i class="fa-solid fa-bars"></i></button>
+        <button class="OpenButton" onclick="OpenNav()"><i class="fa fa-bars"></i></button>
     </section>
 
     <section id="Home" style="height: 80%;">
@@ -36,7 +43,7 @@
     <section class="Wrap">
         <div class="Announcments">
             <div class="Announcment">
-                <i class="fa-brands fa-discord"></i>
+                <i class="fab fa-discord"></i>
                 <h1>New Discord Server!</h1>
                 <p>I have opened a new discord server for help on my videos!</p>
                 <br>
@@ -65,7 +72,7 @@
         <hr style="margin: 0rem 3rem; opacity: 0.25;">
         <br>
         <div style="width: 70%; margin-left: auto; margin-right: auto;">
-        <img src="/Assets/images/GFX4-min.png" class="SkillsIMG" width="40%">
+        <img src="assets/img/GFX4-min.png" class="SkillsIMG" width="40%">
         <div class="ExperienceWrap" style="align-self: center;">
             <div class="experience">
                 <p style="margin-top: 0px; text-align: center;">Roblox LUA</p>
@@ -100,7 +107,7 @@
     </section>
 
     <section id="Feedback" style="min-height: 80%; margin-top: 15%;">
-        <h1 class="SectionTitle">Feedback <i class="fa-solid fa-pencil"></i></h1>
+        <h1 class="SectionTitle">Feedback <i class="fa fa-pencil-alt"></i></h1>
         <br>
         <hr style="margin: 0rem 3rem; opacity: 0.25;">
         <br>
@@ -118,7 +125,11 @@
             <a href="https://www.youtube.com/channel/UCVrPcuqv1yK6-ep1-FPUTQA" target="_blank">YouTube</a>
             <a href="https://discord.gg/u7cdb5g2Aj" target="_blank">Discord</a>
         </div>
+<<<<<<< Updated upstream
+=======
+        <div class="Settings">
+        </div>
+>>>>>>> Stashed changes
     </section>
 </body>
-    
 </html>
