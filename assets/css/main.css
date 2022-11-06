@@ -83,7 +83,7 @@ body{
 
 .Announcment button{
     background: blue;
-    color: rgb(var(--text));
+    color: white;
     padding: 10px;
     transition: 0.5s;
     border: none;
@@ -91,7 +91,6 @@ body{
 
 .Announcment button:hover{
     background: rgba(0, 0, 255, 0.623);
-    color: rgb(var(--text));
     padding: 10px;
     transition: 0.5s;
     cursor: pointer;
