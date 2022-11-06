@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream:Assets/JS/ThemeManager.JS
-let lightmode = localStorage.
-=======
 let lightMode = localStorage.getItem('lightMode'); 
 
 const lightModeToggle = document.querySelector('#light-mode-toggle');
@@ -35,4 +32,3 @@ lightModeToggle.addEventListener('click', () => {
     disableLightMode(); 
   }
 });
->>>>>>> Stashed changes:assets/js/theme.js
