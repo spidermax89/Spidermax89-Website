@@ -50,10 +50,10 @@ body{
     margin: auto;
     display: flex;
     margin-top: 25px;
+    margin-bottom: 20px;
     transition: 0.5s;
     text-align: center;
     column-gap: 30px;
-    padding-bottom: 20px;
 }
 
 .Announcment{
@@ -217,9 +217,6 @@ body{
         max-width: 400px;
     }
 
-    .SectionTitle{
-        padding-top: 100px;
-    }
 
     .OpenButton, .CloseButton{
         display: none;
@@ -275,6 +272,7 @@ body{
         text-underline-offset: 8px;
         text-decoration-color: aqua;
         text-decoration-thickness: 1px;
+        cursor: pointer;
     }
 
     .NavBar p{
@@ -291,6 +289,11 @@ body{
         top: 0;
         width: 100%;
     }
+
+    section{
+        margin: 3px, 0px;
+        min-height: 90%;
+    }
 }
 
 @media(max-width: 800px){
@@ -304,7 +307,6 @@ body{
         gap: 50px;
         flex-direction: column;
         width: 100%;
-        margin: 10px;
     }
 
     .NavBar{
@@ -376,5 +378,11 @@ body{
         transition: 0.3s;
         border-style: none;
         background: none;
+    }
+
+    section{
+        min-height: 70%;
+        height: fit-content;
+
     }
 }

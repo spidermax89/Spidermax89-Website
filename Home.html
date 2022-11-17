@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <! CSS Linking Below>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/CSS/animation.css">
     <! JS Linking Below>
-    <script src="assets/js/feedback.js"></script>
+   
     <script src="assets/js/nav.js"></script>
+    <script defer src="Assets/JS/scrollAnimation.js"></script>
 </head>
 <body>
-    <section class="NavBarSection">
+    <section class="NavBarSection" style="height: 50px; min-height: auto;">
         <div class="NavBar" id="NavBar">
             <button class="CloseButton" onclick="CloseNav()"><i class="fa fa-window-close"></i></button>
             <a onclick="HomeClick()" href="/#Home">Home</a>
@@ -27,7 +29,7 @@
         <button class="OpenButton" onclick="OpenNav()"><i class="fa fa-bars"></i></button>
     </section>
 
-    <section id="Home" style="height: 80%;">
+    <section id="Home">
     <h1 class="SectionTitle">Welcome to my site! &#128075;</h1>
     <br>
     <hr style="margin: 0rem 3rem; opacity: 0.25;">
@@ -59,7 +61,7 @@
     </section>
 
 
-    <section id="Skills" style="height: 80%;">
+    <section id="Skills" style="height: auto;">
         <h1 class="SectionTitle">Skills &#128736;</h1>
         <br>
         <hr style="margin: 0rem 3rem; opacity: 0.25;">
@@ -68,38 +70,45 @@
         <img src="assets/img/GFX4-min.png" class="SkillsIMG" width="40%">
         <div class="ExperienceWrap" style="align-self: center;">
             <div class="experience">
+                <p style="margin-top: 0px; text-align: center;">Content Creation</p>
+                <div style="width: 100%; height: 10px; background-color: #818181; border-radius: 5px;" >
+                    <div class="hidden" style="width: 100%; height: 100%; background-color: rgb(85, 158, 255); border-radius: 5px;"></div>
+                </div>
+                <p style="text-align: center; margin-bottom: 0px;">3.5 Years</p>
+            </div>
+            <div class="experience">
                 <p style="margin-top: 0px; text-align: center;">Roblox LUA</p>
                 <div style="width: 100%; height: 10px; background-color: #818181; border-radius: 5px;" >
-                    <div style="width: 57%; height: 100%; background-color: rgb(85, 158, 255); border-radius: 5px;"></div>
+                    <div class="hidden" style="width: 57%; height: 100%; background-color: rgb(85, 158, 255); border-radius: 5px;"></div>
+                </div>
+                <p style="text-align: center; margin-bottom: 0px;">2 Years</p>
+            </div>
+            <div class="experience">
+                <p style="margin-top: 0px; text-align: center;">Creating Roblox GFXs</p>
+                <div style="width: 100%; height: 10px; background-color: #818181; border-radius: 5px;" >
+                    <div class="hidden" style="width: 57%; height: 100%; background-color: rgb(85, 158, 255); border-radius: 5px;"></div>
                 </div>
                 <p style="text-align: center; margin-bottom: 0px;">2 Years</p>
             </div>
             <div class="experience">
                 <p style="margin-top: 0px; text-align: center;">HTML & CSS</p>
                 <div style="width: 100%; height: 10px; background-color: #818181; border-radius: 5px;" >
-                    <div style="width: 29%; height: 100%; background-color: rgb(85, 158, 255); border-radius: 5px;"></div>
+                    <div class="hidden" style="width: 29%; height: 100%; background-color: rgb(85, 158, 255); border-radius: 5px;"></div>
                 </div>
                 <p style="text-align: center; margin-bottom: 0px;">1 Years</p>
             </div>
             <div class="experience">
-                <p style="margin-top: 0px; text-align: center;">Content Creation</p>
+                <p style="margin-top: 0px; text-align: center;">Discord.JS</p>
                 <div style="width: 100%; height: 10px; background-color: #818181; border-radius: 5px;" >
-                    <div style="width: 100%; height: 100%; background-color: rgb(85, 158, 255); border-radius: 5px;"></div>
+                    <div class="hidden" style="width: 14.5%; height: 100%; background-color: rgb(85, 158, 255); border-radius: 5px;"></div>
                 </div>
-                <p style="text-align: center; margin-bottom: 0px;">3.5 Years</p>
-            </div>
-            <div class="experience">
-                <p style="margin-top: 0px; text-align: center;">Creating Roblox GFXs</p>
-                <div style="width: 100%; height: 10px; background-color: #818181; border-radius: 5px;" >
-                    <div style="width: 57%; height: 100%; background-color: rgb(85, 158, 255); border-radius: 5px;"></div>
-                </div>
-                <p style="text-align: center; margin-bottom: 0px;">2 Years</p>
+                <p style="text-align: center; margin-bottom: 0px;">6 Months</p>
             </div>
         </div>
         </div>
     </section>
 
-    <section id="Feedback" style="min-height: 80%; margin-top: 15%;">
+    <section id="Feedback">
         <h1 class="SectionTitle">Feedback <i class="fa fa-pencil-alt"></i></h1>
         <br>
         <hr style="margin: 0rem 3rem; opacity: 0.25;">
@@ -111,7 +120,7 @@
         </form>
     </section>
 
-    <section class="Footer" style="margin-top: 100px;" >
+    <section class="Footer" style="height: auto; min-height: auto; margin-top: 20px;" >
         <p>Site made by Max | Mobey</p>
         <div class="Content">
             <a href="https://www.twitch.tv/spidermax89" target="_blank">Twitch</a>
