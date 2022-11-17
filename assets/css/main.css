@@ -192,6 +192,22 @@ body{
     transform: scale(1.05);
 }
 
+.hidden{
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: all 2s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show{
+    transform: scaleX(1);
+}
+
 
 @media(min-width: 800px){
 
