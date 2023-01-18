@@ -1,0 +1,28 @@
+footer{
+    background-color: rgb(53, 53, 53);
+    width: 100%;
+    top: 0%;
+    z-index: 3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer .middle{
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer a:hover{
+    color: rgb(202, 202, 202);
+}
+
+footer p{
+    margin: 10px;
+}
