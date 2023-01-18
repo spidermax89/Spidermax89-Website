@@ -1,0 +1,26 @@
+header{
+    background-color: rgb(53, 53, 53);
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    z-index: 3;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1px;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
