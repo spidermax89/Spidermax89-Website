@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./Assets/css/nav.css">
     <link rel="stylesheet" href="./Assets/css/footer.css">
     <link rel="icon" type="image/x-icon" href="./Assets/img/Round2Logo.png">
-    <script src="./Assets/js/YouTubeTest.js" async></script>
-    <script src="./Assets/js/scrollAnimation.js"></script>
+    <script src="./Assets/js/YouTubeAPI.js"></script>
+    <script src="./Assets/js/TwitchAPI.js"></script>
     <title>Spidermax89</title>
 </head>
 <body>
@@ -33,17 +33,30 @@
         <div class="Stats" id="Stats">
             <h1 class="SectionHead"><i class="fab fa-youtube"></i> Statistics</h1>
             <div class="StatWrap">
-                <div class="StatCard">
+                <div class="YStatCard">
                     <h2>Views <i class="fas fa-eye"></i></h2>
-                    <p id="ViewStat">Loading</p>
+                    <p id="YViewStat">Loading</p>
                 </div>
-                <div class="StatCard">
+                <div class="YStatCard">
                     <h2>Subscribers <i class="fas fa-users"></i></h2>
-                    <p id="SubStat">Loading</p>
+                    <p id="YSubStat">Loading</p>
                 </div>
-                <div class="StatCard">
+                <div class="YStatCard">
                     <h2>Videos <i class="fas fa-video"></i></h2>
-                    <p id="VidStat">Loading</p>
+                    <p id="YVidStat">Loading</p>
+                </div>
+            </div>
+            <p class="StatNote">Stats are updated when the page is loaded/reloaded</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="Stats" id="Stats">
+            <h1 class="SectionHead"><i class="fab fa-twitch"></i> Statistics</h1>
+            <div class="StatWrap">
+                <div class="TStatCard">
+                    <h2>Followers <i class="fas fa-users"></i></h2>
+                    <p id="TSubStat">Loading</p>
                 </div>
             </div>
             <p class="StatNote">Stats are updated when the page is loaded/reloaded</p>

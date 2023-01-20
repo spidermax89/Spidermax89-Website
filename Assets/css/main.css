@@ -105,8 +105,8 @@ hr{
     justify-content: space-evenly;
 }
 
-.StatCard{
-    background-color: rgb(53, 53, 53);
+.YStatCard{
+    background-color: rgba(255, 0, 0, 0.342);
     padding: 5px;
     text-align: center;
     border-radius: 10px;
@@ -115,11 +115,21 @@ hr{
     transition: all 0.2s;
 }
 
-.StatCard p{
+.TStatCard{
+    background-color: rgba(132, 0, 255, 0.342);
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    min-width: 200px;
+    min-height: 100px;
+    transition: all 0.2s;
+}
+
+.YStatCard p, .TStatCard p{
     font-size: 20px;
 }
 
-.StatCard:hover{
+.YStatCard:hover, .TStatCard:hover{
     transform: scale(1.2);
 }
 
