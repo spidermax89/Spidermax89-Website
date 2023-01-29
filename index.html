@@ -33,15 +33,15 @@
         <div class="Stats" id="Stats">
             <h1 class="SectionHead"><i class="fab fa-youtube"></i> Statistics</h1>
             <div class="StatWrap">
-                <div class="YStatCard">
+                <div class="YStatCard" id="Stat">
                     <h2>Views <i class="fas fa-eye"></i></h2>
                     <p id="YViewStat">Loading</p>
                 </div>
-                <div class="YStatCard">
+                <div class="YStatCard" id="Stat">
                     <h2>Subscribers <i class="fas fa-users"></i></h2>
                     <p id="YSubStat">Loading</p>
                 </div>
-                <div class="YStatCard">
+                <div class="YStatCard" id="Stat">
                     <h2>Videos <i class="fas fa-video"></i></h2>
                     <p id="YVidStat">Loading</p>
                 </div>
@@ -54,7 +54,7 @@
         <div class="Stats" id="Stats">
             <h1 class="SectionHead"><i class="fab fa-twitch"></i> Statistics</h1>
             <div class="StatWrap">
-                <div class="TStatCard">
+                <div class="TStatCard" id="Stat">
                     <h2>Followers <i class="fas fa-users"></i></h2>
                     <p id="TSubStat">Loading</p>
                 </div>
@@ -82,5 +82,11 @@
             <p>© Max Mobey 2022 - 2023</p>
         </div>
     </footer>
+    <script type="text/javascript" src="./Assets/js/tilt.js"></script>
+    <script>VanillaTilt.init(document.querySelectorAll('#Stat'), {
+        max:15,
+        speed:400,
+        easing: "cubic-bezier(999s)"
+    })</script>
 </body>
 </html>
