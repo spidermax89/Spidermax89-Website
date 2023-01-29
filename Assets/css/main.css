@@ -136,7 +136,6 @@ hr{
 
 #Stat h2, #Stat p{
     transform: translateZ(50px);
-    transition: all 0.3s;
 }
 
 .StatNote{
