@@ -129,8 +129,13 @@ hr{
     font-size: 20px;
 }
 
-.YStatCard:hover, .TStatCard:hover{
-    transform: scale(1.2);
+#Stat:hover{
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+
+#Stat h2, #Stat p{
+    transform: translateZ(50px);
 }
 
 .StatNote{
