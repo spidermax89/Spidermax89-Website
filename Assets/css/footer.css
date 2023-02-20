@@ -5,10 +5,27 @@ footer{
     z-index: 3;
     padding-top: 5px;
     padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 50%));
+    grid-template-rows: auto auto;
 }
 
-footer .middle{
+footer .Section1, footer .Section2{
     text-align: center;
+}
+
+.Section3{
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+.Section1 .Social{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 footer a{

@@ -4,31 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="./Assets/css/main.css">
-    <link rel="stylesheet" href="./Assets/css/nav.css">
     <link rel="stylesheet" href="./Assets/css/footer.css">
     <link rel="icon" type="image/x-icon" href="./Assets/img/Round2Logo.png">
     <script src="./Assets/js/YouTubeAPI.js"></script>
-    <script src="./Assets/js/TwitchAPI.js"></script>
+    <!--<script src="./Assets/js/TwitchAPI.js"></script>-->
     <title>Spidermax89</title>
 </head>
 <body>
-    <header>
-        <nav class="TopNav">
-                <p>Spidermax89</p>
-                <a href="https://discord.gg/u7cdb5g2Aj" target="_blank"><i class="fab fa-discord"></i></a>
-                <a href="https://www.youtube.com/@Spidermax89" target="_blank"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.twitch.tv/spidermax89" target="_blank"><i class="fab fa-twitch"></i></a>
-        </nav>
-    </header>
     <main>
         <div class="PageHeader">
             <a href="https://www.youtube.com/@Spidermax89" target="_blank"><button class="MainImgButton"><img src="./Assets/img/Round2Logo.png" class="MainImg"></button></a>
             <h1>Spidermax89</h1>
         </div>
-        <br>
-        <hr>
         <br>
         <div class="Stats" id="Stats">
             <h1 class="SectionHead"><i class="fab fa-youtube"></i> Statistics</h1>
@@ -46,12 +35,7 @@
                     <p id="YVidStat">Loading</p>
                 </div>
             </div>
-            <p class="StatNote">Stats are updated when the page is loaded/reloaded</p>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <div class="Stats" id="Stats">
+            <br><br><br>
             <h1 class="SectionHead"><i class="fab fa-twitch"></i> Statistics</h1>
             <div class="StatWrap">
                 <div class="TStatCard" id="Stat">
@@ -64,6 +48,28 @@
         <br>
         <hr>
         <br>
+        <h1 class="SectionHead">Currently Working On</h1>
+        <div class="WorkWrap">
+            <div class="WorkCard card1">
+                <h3>Night's Truckstyling</h3>
+                <p>Role - Project Coordinator</p>
+                <div class="Socials">
+                    <a href="https://www.nightstruckstyling.com/" title="Website" target="_blank"><i class="fas fa-globe"></i></a>
+                    <a href="https://discord.gg/night-s-truckstyling-907405033841238026" title="Discord" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="WorkCard card2">
+                <h3>Golden Phoenix Express</h3>
+                <p>Role - Developer</p>
+                <div class="Socials">
+                    <a href="https://goldenphoenixexpressvtc.com/" title="Website" target="_blank"><i class="fas fa-globe"></i></a>
+                    <a href="https://discord.gg/GPE" title="Discord" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
         <div class="RecentUpload" id="RecentUpload">
             <h1 class="SectionHead">Newest Upload</h1>
             <iframe id="RecentVid" width="560" height="315" src="https://www.youtube.com/embed?list=UULFVrPcuqv1yK6-ep1-FPUTQA&ab_channel=Spidermax89" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -72,21 +78,22 @@
 
     </main>
     <footer>
-        <div class="middle">
-            <p>Made by Max | Mobey</p>
+        <div class="Section1">
+            <h3>Socials</h3>
             <div class="Social">
                 <a href="https://www.twitch.tv/spidermax89" target="_blank"> Twitch </a>
                 <a href="https://www.youtube.com/@Spidermax89" target="_blank"> YouTube </a>
                 <a href="https://discord.gg/u7cdb5g2Aj" target="_blank"> Discord </a>
             </div>
+        </div>
+        <div class="Section2">
+            <h3>Need Help?</h3>
+            <p>You can reach me @ Max | Mobey#8989</p>
+        </div>
+        <div class="Section3">
+            <p>Made by Max | Mobey</p>
             <p>© Max Mobey 2022 - 2023</p>
         </div>
     </footer>
-    <script type="text/javascript" src="./Assets/js/tilt.js"></script>
-    <script>VanillaTilt.init(document.querySelectorAll('#Stat'), {
-        max:20,
-        speed:400,
-        easing: "cubic-bezier(999s)"
-    })</script>
 </body>
 </html>
