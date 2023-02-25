@@ -1,13 +1,19 @@
 footer{
-    background-color: rgb(53, 53, 53);
+    background-color: #181818;
     width: 100%;
     top: 0%;
     z-index: 3;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-top: 100px;
+}
+
+.FooterHolder{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20%, 50%));
     grid-template-rows: auto auto;
+    max-width: 1000px;
+    margin: auto;
 }
 
 footer .Section1, footer .Section2{
