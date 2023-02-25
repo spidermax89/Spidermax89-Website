@@ -237,20 +237,28 @@ hr{
     backdrop-filter: blur(15.7px);
     -webkit-backdrop-filter: blur(15.7px);   
     padding: 10px;
-    width: fit-content;
     margin: auto;
     max-width: 360px;
-    width: 100%;
+    width: 90%;
 }
 
 @media(max-width: 450px){
     .DiscordStatus{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
         flex-direction: column;
         align-items: center;
     }
 
     #DiscordPfp{
         width: 136px;
+        margin: auto;
+    }
+
+    .TextHolder{
+        margin-left: auto!important;
+        margin-right: auto;
     }
 }
 
