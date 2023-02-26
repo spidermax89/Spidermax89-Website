@@ -43,12 +43,12 @@
 
 html, body{
     scroll-behavior: smooth;
+    background-image: linear-gradient(to bottom, #001e4a, #101a3b, #15172d, #15151f, #121212);
     padding: 0;
     margin: 0;
 }
 
 body{
-    background-image: linear-gradient(to bottom, #001e4a, #101a3b, #15172d, #15151f, #121212);
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
