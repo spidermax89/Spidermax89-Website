@@ -208,17 +208,17 @@ hr{
     justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 10px;
 }
 
 .WorkCard{
     background-color: rgb(61, 61, 61);
     padding: 5px;
     text-align: center;
-    min-width: 250px;
-    width: 40%;
+    max-width: 450px;
+    width: 90%;
     min-height: 100px;
-    height: 100px;
+    height: 110px;
     transition: all 0.2s;
     padding: 15px;
     text-align: center;
@@ -229,8 +229,12 @@ hr{
     aspect-ratio: 1/1.6;
 }
 
+.card3:before{
+    background: linear-gradient(130deg, transparent 0% 33%, #88edfe 66%, #7BABEA 100%);
+}
+
 .card2:before{
-    background: linear-gradient(130deg, transparent 0% 33%, #805100 66%, #6e4600 100%)
+    background: linear-gradient(130deg, transparent 0% 33%, #805100 66%, #B98238 100%)
 }
 
 .card1:before{
@@ -266,6 +270,10 @@ hr{
     border: 1px solid #805100;
 }
 
+.card3{
+    border: 1px solid #88edfe;
+}
+
 .WorkCard h3{
     margin: 3px auto;
 }
@@ -283,7 +291,7 @@ hr{
 
 .DiscordStatus{
     display: flex;
-    background: rgba(7, 7, 7, 0.29);
+    background: #3a366c83;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.048);
     backdrop-filter: blur(15.7px);
