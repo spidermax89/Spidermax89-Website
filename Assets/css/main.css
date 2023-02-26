@@ -140,36 +140,58 @@ hr{
     margin-bottom: 5px;
 }
 
-.YStatCard{
+.YStatCard, .TStatCard{
     padding: 5px;
     text-align: center;
     min-width: 200px;
     min-height: 100px;
+    width: 100%;
+    height: 115px;
     margin: 10px 0px;
     transition: all 0.2s;
     background: rgba(7, 7, 7, 0.29);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.048);
     backdrop-filter: blur(15.7px);
-    -webkit-backdrop-filter: blur(15.7px);
+    aspect-ratio: 1/1.6;
+}
+
+.YStatCard{
     border: 1px solid rgba(255, 0, 0, 0.63);
 }
 
 .TStatCard{
-    padding: 5px;
-    text-align: center;
-    border-radius: 10px;
-    min-width: 200px;
-    min-height: 100px;
-    margin: 10px 0px;
-    transition: all 0.2s;
-    background: rgba(7, 7, 7, 0.29);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.048);
-    backdrop-filter: blur(15.7px);
-    -webkit-backdrop-filter: blur(15.7px);
     border: 1px solid rgba(132, 0, 255, 0.63);
 }
+
+
+.YStatCard:before{
+    background: linear-gradient(130deg, transparent 0% 33%, rgb(255, 0, 0) 66%, rgb(165, 33, 0) 100%);
+}
+
+.TStatCard:before{
+    background: linear-gradient(130deg, transparent 0% 33%, rgb(162, 0, 255) 66%, rgb(139, 0, 127) 100%);
+}
+
+.YStatCard:before, .TStatCard:before{
+    z-index: -1;
+    border-radius: 16px;
+    background-size: 300% 300%;
+    background-position: 0% 0%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: all 0.4s;
+}
+
+
+.YStatCard:hover:before, .TStatCard:hover:before{
+    background-position: 100% 100%;
+}
+
 
 .YStatCard p, .TStatCard p{
     font-size: 20px;
@@ -196,6 +218,7 @@ hr{
     min-width: 250px;
     width: 40%;
     min-height: 100px;
+    height: 100px;
     transition: all 0.2s;
     padding: 15px;
     text-align: center;
@@ -203,8 +226,37 @@ hr{
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.048);
     backdrop-filter: blur(15.7px);
-    -webkit-backdrop-filter: blur(15.7px);
+    aspect-ratio: 1/1.6;
 }
+
+.card2:before{
+    background: linear-gradient(130deg, transparent 0% 33%, #805100 66%, #6e4600 100%)
+}
+
+.card1:before{
+    background: linear-gradient(130deg, transparent 0% 33%, #004de6 66%, #002c83 100%);
+}
+
+
+.WorkCard:before{
+    z-index: -1;
+    border-radius: 16px;
+    background-size: 300% 300%;
+    background-position: 0% 0%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: all 0.4s;
+}
+
+
+.WorkCard:hover:before{
+    background-position: 100% 100%;
+}
+
 
 .card1{
     border: 1px solid #004de6;
@@ -235,7 +287,6 @@ hr{
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.048);
     backdrop-filter: blur(15.7px);
-    -webkit-backdrop-filter: blur(15.7px);   
     padding: 10px;
     margin: auto;
     max-width: 360px;
