@@ -20,7 +20,11 @@ async function execute(){
         document.getElementById('DiscordDetails').innerText = responceJSON.data.activities[0].details
     } else{document.getElementById('DiscordDetails').style.display = 'none'}
 
-
+    if (responceJSON.data.activities[0].id == '37e226101a188e62'){
+        document.getElementById('DiscordStatusName').style.marginTop = '0px'
+        document.getElementById('DiscordStatusName').style.fontWeight = '200'
+        document.getElementById('DiscordListen').style.display = 'block'
+    }
 
     document.getElementById('DiscordStatusName').innerText = Activity
 
