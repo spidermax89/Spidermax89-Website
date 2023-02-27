@@ -10,12 +10,12 @@ async function execute(){
     
     var Activity = responceJSON.data.activities[0]
 
-    if (Activity == null) {
-        Activity = 'Nothing/Sleeping 💤'
-    } else if (Activity.state){
+    if (Activity.state){
         Activity = Activity.state
     } else if (Activity.name){
         Activity = `🎮 Playing ${Activity.name}`
+    } else{
+        Activity = 'Nothing/Sleeping 💤'
     }
 
     console.log(responceJSON.data.activities[0].details)
