@@ -3,8 +3,6 @@ async function execute(){
     const responce = await fetch('https://api.lanyard.rest/v1/users/863297546813571082')
     const responceJSON = await responce.json()
 
-    console.log(responceJSON)
-
     document.getElementById('DiscordPfp').setAttribute('src', `https://cdn.discordapp.com/avatars/863297546813571082/${responceJSON.data.discord_user.avatar}`)
     document.getElementById('DiscordTag').innerText = `${responceJSON.data.discord_user.username}#${responceJSON.data.discord_user.discriminator}`
     
@@ -17,8 +15,6 @@ async function execute(){
     } else{
         Activity = 'Nothing/Sleeping 💤'
     }
-
-    console.log(responceJSON.data.activities[0].details)
 
     if (responceJSON.data.activities[0].details != null){
         document.getElementById('DiscordDetails').innerText = responceJSON.data.activities[0].details
@@ -42,9 +38,6 @@ async function execute(){
     }
 
     document.getElementById('DiscordPfp').style.border = `4px solid ${apperance}`
-
-    console.log(apperance)
-
 }
 
 execute()
