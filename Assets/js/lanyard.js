@@ -9,7 +9,22 @@ async function execute(){
     document.getElementById('DiscordTag').innerText = `${responceJSON.data.discord_user.username}#${responceJSON.data.discord_user.discriminator}`
     
     var Activity = responceJSON.data.activities[0]
-    if (Activity == null) {Activity = 'Nothing/Sleeping 💤'} else{Activity = Activity.state}
+
+    if (Activity == null) {
+        Activity = 'Nothing/Sleeping 💤'
+    } else if (Activity.state){
+        Activity = Activity.state
+    } else if (Activity.name){
+        Activity = `🎮 Playing ${Activity.name}`
+    }
+
+    console.log(responceJSON.data.activities[0].details)
+
+    if (responceJSON.data.activities[0].details != null){
+        document.getElementById('DiscordDetails').innerText = responceJSON.data.activities[0].details
+    } else{document.getElementById('DiscordDetails').style.display = 'none'}
+
+
 
     document.getElementById('DiscordStatusName').innerText = Activity
 
