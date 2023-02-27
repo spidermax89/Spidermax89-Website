@@ -8,19 +8,19 @@ async function execute(){
     
     var Activity = responceJSON.data.activities[0]
 
-    if (Activity.state){
+    if (Activity?.state){
         Activity = Activity.state
-    } else if (Activity.name){
+    } else if (Activity?.name){
         Activity = `🎮 Playing ${Activity.name}`
     } else{
         Activity = 'Nothing/Sleeping 💤'
     }
 
-    if (responceJSON.data.activities[0].details != null){
+    if (responceJSON.data.activities[0]?.details != null){
         document.getElementById('DiscordDetails').innerText = responceJSON.data.activities[0].details
     } else{document.getElementById('DiscordDetails').style.display = 'none'}
 
-    if (responceJSON.data.activities[0].id == '37e226101a188e62'){
+    if (responceJSON.data.activities[0]?.id == '37e226101a188e62'){
         document.getElementById('DiscordStatusName').style.marginTop = '0px'
         document.getElementById('DiscordStatusName').style.fontWeight = '200'
         document.getElementById('DiscordListen').style.display = 'block'
