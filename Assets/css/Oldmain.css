@@ -1,0 +1,389 @@
+:root{
+    --bck: rgb(51,51,51); /*Main Back*/
+    --bck2: rgba(105, 105, 105, 0.267); /*IDK*/
+    --bck3: rgb(59, 59, 59); /*IDK*/
+    --bck4: rgb(83, 83, 83); /*IDK*/
+    --bck5: rgb(31, 31, 31); /*IDK*/
+    --bck6: rgb(61, 61, 61); /*Nav Back*/
+    --text: 255,255,255;
+}
+
+.LightMode{
+    --bck: rgb(255, 255, 255); /*Main Back*/
+    --bck2: rgba(168, 168, 168, 0.267); /*IDK*/
+    --bck3: rgb(202, 202, 202); /*IDK*/
+    --bck4: rgb(255, 255, 255); /*IDK*/
+    --bck5: rgb(211, 211, 211); /*IDK*/
+    --bck6: rgb(219, 219, 219); /*Nav Back*/
+    --text: 0,0,0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito+Sans&display=swap');
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 90%;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+    padding: 10px;
+    display: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(19, 19, 19);
+}
+
+html, body{
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to bottom, #001e4a, #101a3b, #15172d, #15151f, #121212);
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    max-width: 1000px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr{
+    width: 100%;
+    opacity: 20%;
+}
+
+.SectionHead{
+   text-align: center; 
+}
+
+.PageHeader{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.PageHeader h1{
+    margin: 0px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.PageHeader h3{
+    margin-top: 5px;
+}
+
+.MainImg{
+    width: 150px;
+    height: auto;
+}
+
+.Announcment button{
+    background: blue;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.MainImgButton{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 100%;
+    transition: all 0.2s;
+}
+
+.MainImgButton:active{
+    transform: translateY(5px);
+
+}
+
+.GridholderStat{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+.Stats2{
+    grid-column: 2; 
+    grid-row: 1;
+}
+
+@media (max-width: 666px){
+    .GridholderStat{
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%;
+    }
+    
+    .Stats2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+.GridholderStat h1{
+    margin-bottom: 5px;
+}
+
+.YStatCard, .TStatCard{
+    padding: 5px;
+    text-align: center;
+    min-width: 200px;
+    min-height: 100px;
+    width: 100%;
+    height: 115px;
+    margin: 10px 0px;
+    transition: all 0.2s;
+    background: rgba(7, 7, 7, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.048);
+    backdrop-filter: blur(15.7px);
+    aspect-ratio: 1/1.6;
+}
+
+.YStatCard{
+    border: 1px solid rgba(255, 0, 0, 0.63);
+}
+
+.TStatCard{
+    border: 1px solid rgba(132, 0, 255, 0.63);
+}
+
+
+.YStatCard:before{
+    background: linear-gradient(130deg, transparent 0% 33%, rgb(255, 0, 0) 66%, rgb(165, 33, 0) 100%);
+}
+
+.TStatCard:before{
+    background: linear-gradient(130deg, transparent 0% 33%, rgb(162, 0, 255) 66%, rgb(139, 0, 127) 100%);
+}
+
+.YStatCard:before, .TStatCard:before{
+    z-index: -1;
+    border-radius: 16px;
+    background-size: 300% 300%;
+    background-position: 0% 0%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: all 0.4s;
+}
+
+
+.YStatCard:hover:before, .TStatCard:hover:before{
+    background-position: 100% 100%;
+}
+
+
+.YStatCard p, .TStatCard p{
+    font-size: 20px;
+}
+
+.StatNote{
+    text-align: center;
+    margin-top: 0px;
+    color: rgba(255, 255, 255, 0.253);
+}
+
+.WorkWrap{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.WorkCard{
+    background-color: rgb(61, 61, 61);
+    padding: 5px;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    min-height: 100px;
+    height: 110px;
+    transition: all 0.2s;
+    padding: 15px;
+    text-align: center;
+    background: rgba(7, 7, 7, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.048);
+    backdrop-filter: blur(15.7px);
+    aspect-ratio: 1/1.6;
+}
+
+.card3:before{
+    background: linear-gradient(130deg, transparent 0% 33%, #88edfe 66%, #7BABEA 100%);
+}
+
+.card2:before{
+    background: linear-gradient(130deg, transparent 0% 33%, #805100 66%, #B98238 100%)
+}
+
+.card1:before{
+    background: linear-gradient(130deg, transparent 0% 33%, #004de6 66%, #002c83 100%);
+}
+
+
+.WorkCard:before{
+    z-index: -1;
+    border-radius: 16px;
+    background-size: 300% 300%;
+    background-position: 0% 0%;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    transition: all 0.4s;
+}
+
+
+.WorkCard:hover:before{
+    background-position: 100% 100%;
+}
+
+
+.card1{
+    border: 1px solid #004de6;
+}
+
+.card2{
+    border: 1px solid #805100;
+}
+
+.card3{
+    border: 1px solid #88edfe;
+}
+
+.WorkCard h3{
+    margin: 3px auto;
+}
+
+.WorkCard a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s;
+    margin: 0px 10px;
+}
+
+.WorkCard a:hover{
+    color: rgba(255, 255, 255, 0.644);
+}
+
+.DiscordStatus{
+    display: flex;
+    background: #3a366c83;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.048);
+    backdrop-filter: blur(15.7px);
+    padding: 10px;
+    margin: auto;
+    max-width: 500px;
+    width: 90%;
+}
+
+@media(max-width: 500px){
+    .DiscordStatus{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #DiscordPfp{
+        width: 136px;
+        margin: auto;
+    }
+
+    .TextHolder{
+        margin-left: auto!important;
+        margin-right: auto;
+    }
+}
+
+#DiscordPfp{
+    border-radius: 999px;
+    vertical-align: middle;
+}
+
+#DiscordTag{
+    margin-bottom: 0px;
+}
+
+.TextHolder{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+/*
+
+.feedbackForm{
+    background-color: rgb(56, 56, 56);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.feedbackForm input{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(129, 129, 129, 0.384);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.feedbackForm textarea{
+    width: 80%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgba(129, 129, 129, 0.384);
+    resize: none;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.feedbackForm button{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(129, 129, 129, 0.384);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    transition: all 0.2s;
+}
+
+.feedbackForm button:hover{
+    transform: scale(1.05);
+    background-color: rgb(37, 37, 37);
+}
+*/
+
+

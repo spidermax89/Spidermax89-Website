@@ -1,389 +1,380 @@
-:root{
-    --bck: rgb(51,51,51); /*Main Back*/
-    --bck2: rgba(105, 105, 105, 0.267); /*IDK*/
-    --bck3: rgb(59, 59, 59); /*IDK*/
-    --bck4: rgb(83, 83, 83); /*IDK*/
-    --bck5: rgb(31, 31, 31); /*IDK*/
-    --bck6: rgb(61, 61, 61); /*Nav Back*/
-    --text: 255,255,255;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Quicksand:wght@300;500;700&display=swap");
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
-.LightMode{
-    --bck: rgb(255, 255, 255); /*Main Back*/
-    --bck2: rgba(168, 168, 168, 0.267); /*IDK*/
-    --bck3: rgb(202, 202, 202); /*IDK*/
-    --bck4: rgb(255, 255, 255); /*IDK*/
-    --bck5: rgb(211, 211, 211); /*IDK*/
-    --bck6: rgb(219, 219, 219); /*Nav Back*/
-    --text: 0,0,0;
+html {
+  scroll-behavior: smooth;
+  background-color: #0c131b;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito+Sans&display=swap');
-
-::-webkit-scrollbar{
-    width: 5px;
-    height: 90%;
+body {
+  margin: 0px;
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar-track{
-    background: transparent;
-    padding: 10px;
-    display: none;
+nav {
+  width: 90vw;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.35);
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  filter: drop-shadow(0 0 1rem rgb(230, 230, 255));
+  z-index: 999;
 }
 
-::-webkit-scrollbar-thumb{
-    background: rgb(0, 0, 0);
-    border-radius: 10px;
-    width: 10px;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  grid-column: 2;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background: rgb(19, 19, 19);
+nav a {
+  text-decoration: none;
+  color: #4e586f;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 17px;
+  margin-right: 20px;
 }
 
-html, body{
-    scroll-behavior: smooth;
-    background-image: linear-gradient(to bottom, #001e4a, #101a3b, #15172d, #15151f, #121212);
-    padding: 0;
-    margin: 0;
+nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
 }
 
-body{
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+nav .NavText p {
+  margin: 0px;
+  color: rgb(22, 24, 49);
+  font-size: 14px;
+  font-weight: lighter;
 }
 
-main{
-    max-width: 1000px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+nav .NavText {
+  height: 100%;
+  margin-left: 20px;
 }
 
-hr{
-    width: 100%;
-    opacity: 20%;
+section {
+  height: fit-content;
+  width: 100%;
+  padding: 70px 0px;
+  min-height: calc(100vh - 70px);
 }
 
-.SectionHead{
-   text-align: center; 
-}
-
-.PageHeader{
-    text-align: center;
-    margin-top: 50px;
-}
-
-.PageHeader h1{
-    margin: 0px;
-    padding-bottom: 10px;
-    font-size: 30px;
-}
-
-.PageHeader h3{
-    margin-top: 5px;
-}
-
-.MainImg{
-    width: 150px;
-    height: auto;
-}
-
-.Announcment button{
-    background: blue;
-    color: white;
-    padding: 10px;
-    transition: 0.5s;
-}
-
-.MainImgButton{
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-    border-radius: 100%;
-    transition: all 0.2s;
-}
-
-.MainImgButton:active{
-    transform: translateY(5px);
-
-}
-
-.GridholderStat{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 100%;
-    height: auto;
-    margin: auto;
-    text-align: center;
-    width: 100%;
-}
-
-.Stats2{
-    grid-column: 2; 
-    grid-row: 1;
-}
-
-@media (max-width: 666px){
-    .GridholderStat{
-        grid-template-rows: auto auto;
-        grid-template-columns: 100%;
+#HeaderSection {
+    background-color: #0c131b;
+    display: flex;
     }
     
-    .Stats2{
-        grid-column: 1;
-        grid-row: 2;
+    #SkillsSection {
+    background-color: #1e2532;
     }
-}
-
-.GridholderStat h1{
-    margin-bottom: 5px;
-}
-
-.YStatCard, .TStatCard{
-    padding: 5px;
-    text-align: center;
-    min-width: 200px;
-    min-height: 100px;
+    
+    #ProjectsSection {
+    background-color: #132c3f;
+    }
+    
+    #SocialsSection {
+    background-color: #314a7f;
+    padding: 3px 0px;
+    min-height: calc(13vh - 3px);
+    }
+    
+    footer {
     width: 100%;
-    height: 115px;
-    margin: 10px 0px;
-    transition: all 0.2s;
-    background: rgba(7, 7, 7, 0.29);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.048);
-    backdrop-filter: blur(15.7px);
-    aspect-ratio: 1/1.6;
+    height: 15vh;
+    background-color: #1f2f4f;
+    }
+.FooterContent {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.YStatCard{
-    border: 1px solid rgba(255, 0, 0, 0.63);
+.FooterContent h3,
+.FooterContent h4 {
+  margin: 5px;
 }
 
-.TStatCard{
-    border: 1px solid rgba(132, 0, 255, 0.63);
+.FooterContent h3 {
+  font-size: 25px;
 }
 
-
-.YStatCard:before{
-    background: linear-gradient(130deg, transparent 0% 33%, rgb(255, 0, 0) 66%, rgb(165, 33, 0) 100%);
+.FooterContent h4 {
+  font-size: 20px;
+  font-weight: lighter;
 }
 
-.TStatCard:before{
-    background: linear-gradient(130deg, transparent 0% 33%, rgb(162, 0, 255) 66%, rgb(139, 0, 127) 100%);
+.HeaderContent {
+  margin: auto;
+  text-align: center;
+  color: white;
 }
 
-.YStatCard:before, .TStatCard:before{
-    z-index: -1;
-    border-radius: 16px;
-    background-size: 300% 300%;
-    background-position: 0% 0%;
-    content: "";
-    height: 100%;
+.HeaderContent h1 {
+  margin: 0px;
+  font-size: 45px;
+}
+
+.HeaderContent h2 {
+  margin: 0px;
+  font-size: 35px;
+  font-weight: lighter;
+}
+
+.HeaderContent p {
+  margin-bottom: 30px;
+  padding: 0px 30px;
+}
+
+.HeaderContent .SocialsButton {
+  background-color: #ffffff;
+  text-decoration: none;
+  color: #1b202b;
+  font-size: 21px;
+  margin-top: 30px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.2s ease-out;
+}
+
+.HeaderContent .SocialsButton:hover {
+  background-color: #4250b1;
+  border-radius: 0px 10px 0px 10px;
+  color: white;
+}
+
+.SkillsContent {
+  color: white;
+  width: 100%;
+}
+
+.ProjectsContent {
+  color: white;
+  width: 100%;
+}
+
+.SkillsContent h2,
+.ProjectsContent h2,
+.SocialsContent h2 {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 4px;
+  text-decoration-style: wavy;
+  text-align: center;
+  margin-bottom: 70px;
+  color: white;
+}
+
+.SkillsContent h2 {
+  text-decoration-color: #1b202b;
+}
+
+.ProjectsContent h2 {
+  text-decoration-color: #5366e2;
+}
+
+.SocialsContent h2 {
+  text-decoration-color: #bedbff;
+  margin-bottom: 30px;
+}
+
+.SkillsHolder {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+  justify-content: center;
+}
+
+.SkillCard {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  background-color: #475166;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.SkillCard img {
+  width: 100px;
+}
+
+.ProjectsHolder {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.ProjectCard h1,
+.ProjectCard h3 {
+  margin: 10px;
+}
+
+.ProjectCard {
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.ProjectCard .ProjectSocials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  gap: 30px;
+}
+
+.ProjectCard .ProjectSocials a {
+  transition: all 0.2s;
+}
+
+.ProjectCard .ProjectSocials a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.ProjectCard a {
+  text-decoration: none;
+  color: white;
+}
+
+.GPE:hover {
+  box-shadow: #805100 0 0 50px 15px;
+}
+
+.NTS:hover {
+  box-shadow: #0b6be0 0 0 50px 15px;
+}
+
+.ProjectCard h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 10px;
+}
+
+.ProjectInside {
+  position: relative;
+  z-index: 2;
+}
+
+.NTS::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #0b6be090, #ffffff60),
+    url("https://cdn.discordapp.com/attachments/937423598065442876/1057042046625529966/ets2_20221226_210548_00.png?");
+  background-size: cover;
+  background-position: -165px 0px;
+  filter: blur(1px);
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.GPE::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #80510090, #ffffff60),
+    url("https://media.discordapp.net/attachments/857753720871190558/1074358287308435476/eurotrucks2_2023-02-12_15-44-53.png?width=1181&height=664");
+  background-size: cover;
+  background-position: -170px 0px;
+  filter: blur(1px);
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.SocialsContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.SocialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.SocialIcons a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  transition: all 0.3s;
+}
+
+.SocialIcons a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 740px) {
+  nav {
+    display: none;
+  }
+
+  .SkillsContent h2 {
+    text-align: center;
     width: 100%;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    transition: all 0.4s;
-}
+    margin-left: 0px;
+  }
 
-
-.YStatCard:hover:before, .TStatCard:hover:before{
-    background-position: 100% 100%;
-}
-
-
-.YStatCard p, .TStatCard p{
-    font-size: 20px;
-}
-
-.StatNote{
-    text-align: center;
-    margin-top: 0px;
-    color: rgba(255, 255, 255, 0.253);
-}
-
-.WorkWrap{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.WorkCard{
-    background-color: rgb(61, 61, 61);
-    padding: 5px;
-    text-align: center;
-    max-width: 450px;
-    width: 90%;
-    min-height: 100px;
-    height: 110px;
-    transition: all 0.2s;
-    padding: 15px;
-    text-align: center;
-    background: rgba(7, 7, 7, 0.29);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.048);
-    backdrop-filter: blur(15.7px);
-    aspect-ratio: 1/1.6;
-}
-
-.card3:before{
-    background: linear-gradient(130deg, transparent 0% 33%, #88edfe 66%, #7BABEA 100%);
-}
-
-.card2:before{
-    background: linear-gradient(130deg, transparent 0% 33%, #805100 66%, #B98238 100%)
-}
-
-.card1:before{
-    background: linear-gradient(130deg, transparent 0% 33%, #004de6 66%, #002c83 100%);
-}
-
-
-.WorkCard:before{
-    z-index: -1;
-    border-radius: 16px;
-    background-size: 300% 300%;
-    background-position: 0% 0%;
-    content: "";
-    height: 100%;
-    width: 100%;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    transition: all 0.4s;
-}
-
-
-.WorkCard:hover:before{
-    background-position: 100% 100%;
-}
-
-
-.card1{
-    border: 1px solid #004de6;
-}
-
-.card2{
-    border: 1px solid #805100;
-}
-
-.card3{
-    border: 1px solid #88edfe;
-}
-
-.WorkCard h3{
-    margin: 3px auto;
-}
-
-.WorkCard a{
-    text-decoration: none;
-    color: white;
-    transition: all 0.2s;
-    margin: 0px 10px;
-}
-
-.WorkCard a:hover{
-    color: rgba(255, 255, 255, 0.644);
-}
-
-.DiscordStatus{
-    display: flex;
-    background: #3a366c83;
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.048);
-    backdrop-filter: blur(15.7px);
-    padding: 10px;
+  .SkillsHolder {
+    width: 80%;
+    position: relative;
     margin: auto;
-    max-width: 500px;
+    justify-content: center;
+  }
+
+  .SkillCard {
     width: 90%;
+  }
 }
-
-@media(max-width: 500px){
-    .DiscordStatus{
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #DiscordPfp{
-        width: 136px;
-        margin: auto;
-    }
-
-    .TextHolder{
-        margin-left: auto!important;
-        margin-right: auto;
-    }
-}
-
-#DiscordPfp{
-    border-radius: 999px;
-    vertical-align: middle;
-}
-
-#DiscordTag{
-    margin-bottom: 0px;
-}
-
-.TextHolder{
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-
-/*
-
-.feedbackForm{
-    background-color: rgb(56, 56, 56);
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.feedbackForm input{
-    width: 80%;
-    height: 50px;
-    border-radius: 10px;
-    background-color: rgba(129, 129, 129, 0.384);
-    color: white;
-    border: none;
-    padding: 10px;
-}
-
-.feedbackForm textarea{
-    width: 80%;
-    height: 200px;
-    border-radius: 10px;
-    background-color: rgba(129, 129, 129, 0.384);
-    resize: none;
-    color: white;
-    border: none;
-    padding: 10px;
-}
-
-.feedbackForm button{
-    width: 80%;
-    height: 50px;
-    border-radius: 10px;
-    background-color: rgba(129, 129, 129, 0.384);
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 30px;
-    transition: all 0.2s;
-}
-
-.feedbackForm button:hover{
-    transform: scale(1.05);
-    background-color: rgb(37, 37, 37);
-}
-*/
-
-

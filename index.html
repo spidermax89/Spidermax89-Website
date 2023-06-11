@@ -1,122 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <link rel="stylesheet" href="./Assets/css/main.css">
-    <link rel="stylesheet" href="./Assets/css/footer.css">
-    <link rel="icon" type="image/x-icon" href="./Assets/img/Round2Logo.png">
-    <script src="./Assets/js/YouTubeAPI.js"></script>
-    <script src="./Assets/js/TwitchAPI.js"></script>
-    <script src="./Assets/js/lanyard.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/e25ff50d7b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/Assets/css/main.css" />
     <title>Spidermax89</title>
-</head>
-<body>
-    <main>
-        <div class="PageHeader">
-            <a href="https://www.youtube.com/@Spidermax89" target="_blank"><button class="MainImgButton"><img src="./Assets/img/Round2Logo.png" class="MainImg"></button></a>
-            <h1>Spidermax89</h1>
-            <h3>Welcome to my site 👋</h3>
+  </head>
+  <body></body>
+  <nav>
+    <div class="NavText">
+      <p>Spidermax89</p>
+      <p>Developer</p>
+    </div>
+    <ul>
+      <li><a href="#HeaderSection">Home</a></li>
+      <li><a href="#SkillsSection">Skills</a></li>
+      <li><a href="#ProjectsSection">Projects</a></li>
+    </ul>
+  </nav>
+
+  <section id="HeaderSection">
+    <div class="HeaderContent">
+      <img src="/Assets/img/emoji.png" width="120px" />
+      <h1>Hello, I'm <span style="color: #5551dd">Max</span>!</h1>
+      <h2>Developer</h2>
+      <p>
+        I am a passionate developer based in the UK, dedicated to creating
+        websites with great design and codeing!
+      </p>
+      <a href="#SocialsSection" class="SocialsButton">Socials</a>
+    </div>
+  </section>
+  <section id="SkillsSection">
+    <div class="SkillsContent">
+      <h2>My current skills!</h2>
+    </div>
+    <div class="SkillsHolder">
+      <div class="SkillCard">
+        <img src="/Assets/img/HTML5.png" />
+        <h3>HTML</h3>
+      </div>
+      <div class="SkillCard">
+        <img src="/Assets/img/CSS3.png" />
+        <h3>CSS</h3>
+      </div>
+      <div class="SkillCard">
+        <img src="/Assets/img/JS.png" style="border-radius: 10px" />
+        <h3>Java Script</h3>
+      </div>
+      <div class="SkillCard">
+        <img src="/Assets/img/LUA.png" />
+        <h3>LUA</h3>
+      </div>
+      <div class="SkillCard">
+        <img src="/Assets/img/MongoDB.png" />
+        <h3>MongoDB</h3>
+      </div>
+      <div class="SkillCard">
+        <img src="/Assets/img/Electron.png" />
+        <h3>Electron</h3>
+      </div>
+    </div>
+  </section>
+  <section id="ProjectsSection">
+    <div class="ProjectsContent">
+      <h2>My current projects!</h2>
+    </div>
+    <div class="ProjectsHolder">
+      <div class="ProjectCard NTS">
+        <div class="ProjectInside">
+          <h1>NTS</h1>
+          <h3>Role - Vice Project Leader</h3>
+          <div class="ProjectSocials">
+            <a
+              href="https://discord.com/invite/night-s-truckstyling-907405033841238026"
+              target="_blank"
+              ><i class="fa-brands fa-discord"></i
+            ></a>
+            <a href="https://www.nightstruckstyling.com" target="_blank"
+              ><i class="fas fa-globe"></i
+            ></a>
+          </div>
         </div>
-        <br>
-        <h1 style="text-align: center;">Statistics</h1>
-        <div class="GridholderStat">
-        <div class="Stats" id="Stats">
-            <h1 class="SectionHead"><i class="fab fa-youtube"></i></h1>
-            <div class="StatWrap">
-                <div class="YStatCard" id="Stat">
-                    <h2>Views <i class="fas fa-eye"></i></h2>
-                    <p id="YViewStat">Loading</p>
-                </div>
-                <div class="YStatCard" id="Stat">
-                    <h2>Subscribers <i class="fas fa-users"></i></h2>
-                    <p id="YSubStat">Loading</p>
-                </div>
-                <div class="YStatCard" id="Stat">
-                    <h2>Videos <i class="fas fa-video"></i></h2>
-                    <p id="YVidStat">Loading</p>
-                </div>
-            </div>
+      </div>
+      <div class="ProjectCard GPE">
+        <div class="ProjectInside">
+          <h1>GPE</h1>
+          <h3>Role - Developer</h3>
+          <div class="ProjectSocials">
+            <a href="https://discord.gg/F44ju4csAV" target="_blank"
+              ><i class="fa-brands fa-discord"></i
+            ></a>
+            <a href="https://goldenphoenixexpressvtc.com" target="_blank"
+              ><i class="fas fa-globe"></i
+            ></a>
+          </div>
         </div>
-            <br><br><br>
-            <div class="Stats2" id="Stats">
-            <h1 class="SectionHead"><i class="fab fa-twitch"></i></h1>
-            <div class="StatWrap">
-                <div class="TStatCard" id="Stat">
-                    <h2>Followers <i class="fas fa-users"></i></h2>
-                    <p id="TSubStat">Loading</p>
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        <p class="StatNote">Stats are updated when the page is loaded/reloaded</p>
-        <br>
-        <hr>
-        <br>
-        <h1 class="SectionHead">Projects</h1>
-        <div class="WorkWrap">
-            <div class="WorkCard card1">
-                <h3>Night's Truckstyling</h3>
-                <p>Role - Project Coordinator</p>
-                <div class="Socials">
-                    <a href="https://www.nightstruckstyling.com/" title="Website" target="_blank"><i class="fas fa-globe"></i></a>
-                    <a href="https://discord.gg/night-s-truckstyling-907405033841238026" title="Discord" target="_blank"><i class="fab fa-discord"></i></a>
-                </div>
-            </div>
-            <div class="WorkCard card2">
-                <h3>Golden Phoenix Express</h3>
-                <p>Role - Developer</p>
-                <div class="Socials">
-                    <a href="https://goldenphoenixexpressvtc.com/" title="Website" target="_blank"><i class="fas fa-globe"></i></a>
-                    <a href="https://discord.gg/GPE" title="Discord" target="_blank"><i class="fab fa-discord"></i></a>
-                </div>
-            </div>
-            <div class="WorkCard card3">
-                <h3>WestSide Logistics</h3>
-                <p>Role - Developer</p>
-                <div class="Socials">
-                    <a href="https://westside-logistics.epizy.com/" title="Website" target="_blank"><i class="fas fa-globe"></i></a>
-                    <a href="https://discord.gg/z4Zmxz7pV4" title="Discord" target="_blank"><i class="fab fa-discord"></i></a>
-                </div>
-            </div>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <br>
-        <h1 class="SectionHead">What I'm doing now!</h1>
-        <div class="DiscordStatus">
-            <img id="DiscordPfp" src="test">
-            <div class="TextHolder">
-                <h3 id="DiscordTag"></h3>
-                <p id="DiscordListen" style="margin-bottom: 0px; margin-top: 5px; font-weight: bold; display: none;">🎧 Listening to:</p>
-                <p id="DiscordStatusName" style="margin-bottom: 0px;  font-weight: bold;"></p>
-                <p id="DiscordDetails" style="margin-top: 1px; font-style: italic;"></p>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="FooterHolder">
-            <div class="Section1">
-                <h3>Socials</h3>
-                <div class="Social">
-                    <a href="https://www.twitch.tv/spidermax89" target="_blank"> Twitch </a>
-                    <a href="https://www.youtube.com/@Spidermax89" target="_blank"> YouTube </a>
-                    <a href="https://discord.gg/u7cdb5g2Aj" target="_blank"> Discord </a>
-                </div>
-            </div>
-            <div class="Section2">
-                <h3>Need Help?</h3>
-                <p>You can reach me @ Max | Mobey#8989</p>
-            </div>
-            <div class="Section3">
-                <p>Made by Max | Mobey</p>
-                <p>© Max Mobey 2022 - 2023</p>
-            </div>
-        </div>
-    </footer>
-</body>
+      </div>
+    </div>
+  </section>
+  <section id="SocialsSection">
+    <div class="SocialsContent">
+      <h2>Socials</h2>
+      <div class="SocialIcons">
+        <a href="https://www.twitch.tv/spidermax89" target="_blank"
+          ><i class="fab fa-twitch"></i
+        ></a>
+        <a href="https://twitter.com/max_mobey" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.youtube.com/@Spidermax89" target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a href="https://discord.gg/u7cdb5g2Aj" target="_blank"
+          ><i class="fab fa-discord"></i
+        ></a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="FooterContent">
+      <h3>Made by Max | Mobey</h3>
+      <h4>© Max Mobey 2022 - 2023</h4>
+    </div>
+  </footer>
 </html>
