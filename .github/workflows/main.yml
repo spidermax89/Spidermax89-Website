@@ -1,18 +1,26 @@
-on: push
-name: 🚀 Deploy website on push
+name: 🚀 Deploy website manually
+
+on:
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: 'Trigger manual deployment'
+        required: true
+        default: 'true'
+
 jobs:
   web-deploy:
-    if: ${{ github.ref == 'refs/heads/main' }}
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.2
-      with:
-        server: ftpupload.net
-        username: epiz_31970811
-        password: ${{ secrets.ftp_password }}
-        server-dir: ./htdocs/
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
+        with:
+          server: ftpupload.net
+          username: epiz_31970811
+          password: ${{ secrets.ftp_password }}
+          server-dir: ./htdocs/
