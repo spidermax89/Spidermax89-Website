@@ -272,6 +272,7 @@ section {
 
 .ProjectCard .ProjectSocials a:hover {
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .ProjectCard a {
@@ -354,6 +355,7 @@ section {
 
 .SocialIcons a:hover {
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 740px) {
