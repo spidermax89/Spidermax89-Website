@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Quicksand:wght@300;500;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    background-color: #1B202B;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 90vw;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.35);
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    filter: drop-shadow(0 0 1rem rgb(230, 230, 255));
+    z-index: 999;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    grid-column: 2;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #4e586f;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+}
+
+nav .NavText p{
+    margin: 0px;
+    color: rgb(22, 24, 49);
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+nav .NavText{
+    height: 100%;
+    margin-left: 20px;
+}
+
+section{
+    height: fit-content;
+    width: 100%;
+    padding: 70px 0px;
+    min-height: calc(100vh - 70px);
+}
+
+#HeaderSection{
+    background-color: #1B202B;
+    display: flex;
+}
+
+#SkillsSection{
+    background-color: #4250b1;
+}
+
+#ProjectsSection{
+    background-color: #4e586f;
+}
+
+.HeaderContent{
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.HeaderContent h1{
+    margin: 0px;
+    font-size: 45px;
+}
+
+.HeaderContent h2{
+    margin: 0px;
+    font-size: 35px;
+    font-weight: lighter;
+}
+
+.SkillsContent{
+    color: white;
+    width: 100%;
+}
+
+.SkillsContent h2{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #1B202B;
+    text-decoration-thickness: 4px;
+    text-decoration-style: wavy;
+    margin-left: 20px;
+}
+
+.SkillsHolder{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 18px;
+    position: absolute;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.SkillCard{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    background-color: #1B202B;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+.SkillCard img{
+    width: 100px;
+}
+
+@media screen and (max-width: 740px) {
+    nav{
+        display: none;
+    }
+
+    .SkillsContent h2{
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .SkillsHolder{
+        width: 80%;
+        position: relative;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .SkillCard{
+        width: 90%;
+    }
+}
