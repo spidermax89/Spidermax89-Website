@@ -116,4 +116,8 @@ body {
   .welcomeTitle{
     font-size: 35px;
   }
+
+  .project{
+    width: 80%;
+  }
 }
