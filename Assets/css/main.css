@@ -6,7 +6,7 @@ html::-webkit-scrollbar {
 
 html {
   scroll-behavior: smooth;
-  background-color: #1d1d1d;
+  background-color: #272727;
 }
 
 body {
@@ -15,12 +15,60 @@ body {
   scroll-behavior: smooth;
 }
 
-.welcomeTitle{
+.welcomeTitle {
   font-size: 60px;
   margin: 5px auto;
   margin-bottom: 0px;
   color: rgb(189, 189, 189);
   text-align: center;
+  position: relative;
+}
+
+.welcomeTitle::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.2s;
+}
+
+.welcomeTitle span {
+  transition: color 0.2s;
+}
+
+.welcomeTitle:hover::before {
+  width: 100%;
+}
+
+.welcomeTitle:hover span {
+  animation: in-glow 0.2s 1;
+  animation-fill-mode: forwards;
+}
+
+.welcomeTitle:not(:hover) span {
+  animation: out-glow 0.2s 1;
+  animation-fill-mode: backwards;
+}
+
+@keyframes in-glow {
+  0% {
+    text-shadow: 0 0 0 white;
+  }
+  100% {
+    text-shadow:  0px 0px 20px white;
+  }
+}
+
+@keyframes out-glow {
+  0% {
+    text-shadow:  0px 0px 20px white;
+  }
+  100% {
+    text-shadow: 0 0 0 white;
+  }
 }
 
 .welcomeTitle span, .welcomeSub span{
@@ -52,72 +100,8 @@ body {
 }
 
 .top{
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.topDown{
-  height: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-}
-
-.projectsHolder{
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px ;
-}
-
-.Projects{
-  margin-top: 5%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-}
-
-.topDown p{
-  margin: 0px;
-}
-
-.project{
-  display: grid;
-  grid-template-columns: 100px 200px;
-  grid-template-rows: auto auto;
   align-items: center;
-  justify-content: center;
-  justify-items: center;
-  column-gap: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: rgb(61, 61, 61);
-  width: 400px;
-}
-
-.project img{
-  grid-row-start: 1;
-  grid-row-end: 3;
-  width: 100px;
-  border-radius: 100px;
-}
-
-.project h1, .project p{
-  margin: 0px;
-  color: white;
-}
-
-@media (max-width: 500px){
-  .welcomeTitle{
-    font-size: 35px;
-  }
-
-  .projectsHolder{
-    width: 80%;
-  }
 }
