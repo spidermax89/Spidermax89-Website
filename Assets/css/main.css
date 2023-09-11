@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html::-webkit-scrollbar {
   display: none;
@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -58,36 +58,37 @@ body {
     text-shadow: 0 0 0 white;
   }
   100% {
-    text-shadow:  0px 0px 20px white;
+    text-shadow: 0px 0px 20px white;
   }
 }
 
 @keyframes out-glow {
   0% {
-    text-shadow:  0px 0px 20px white;
+    text-shadow: 0px 0px 20px white;
   }
   100% {
     text-shadow: 0 0 0 white;
   }
 }
 
-.welcomeTitle span, .welcomeSub span{
+.welcomeTitle span,
+.welcomeSub span {
   color: rgb(255, 255, 255);
 }
 
-.welcomeSub{
+.welcomeSub {
   color: rgb(189, 189, 189);
   margin-bottom: 10px;
   margin-top: 2px;
   font-size: 20px;
 }
 
-.topText .socials{
+.topText .socials {
   display: flex;
   gap: 10px;
 }
 
-.topText a{
+.topText a {
   width: 35px;
   height: 35px;
   background-color: rgb(112, 112, 112);
@@ -99,9 +100,184 @@ body {
   text-decoration: none;
 }
 
-.topSection{
+.topSection {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  color: white;
+  left: 50%;
+  transition: background-color 1s, margin 1s, border-radius 1s, width 1s,
+    padding 1s, box-shadow 1s;
+}
+
+nav.top {
+  padding: 10px 50%;
+  background-color: rgb(63, 63, 63);
+  width: 100%;
+  position: fixed;
+  transform: translateX(-50%);
+}
+
+nav.top a {
+  margin-left: 20px;
+}
+
+nav.scroll {
+  padding: 10px;
+  background-color: #4d4d4d;
+  width: 90%;
+  margin: 10px;
+  border-radius: 20px;
+  position: fixed;
+  z-index: 999;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 20px 0px rgba(85, 85, 85, 0.75);
+}
+
+nav img {
+  height: 100%;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+#projectsIcon::after {
+  content: "Projects";
+}
+
+#homeIcon::after {
+  content: "Home";
+}
+
+nav a::after {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+nav a:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  color: rgb(189, 189, 189);
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+.projectsTitle {
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+.projectText h2 {
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.projectText p {
+  font-size: 20px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.projectImg {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+.projectImg img {
+  object-fit: cover;
+}
+
+.footnote {
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 50px;
+  color: rgb(189, 189, 189);
+}
+
+.footnote a {
+  color: rgb(189, 189, 189);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: 0.2s;
+}
+
+.footnote a:hover {
+  color: white;
+}
+
+.project .role {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(189, 189, 189);
+}
+
+.project .socials {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: rgb(189, 189, 189);
+}
+
+.project .socials a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+  transition: 0.2s;
+}
+
+.project .socials a:hover {
+  color: white;
 }
