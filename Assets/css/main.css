@@ -109,28 +109,25 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 30px;
   color: white;
-  left: 50%;
-  transition: background-color 1s, margin 1s, border-radius 1s, width 1s,
-    padding 1s, box-shadow 1s;
+  transition: background-color 0.2s, margin 0.2s, border-radius 0.2s, width 0.2s,
+    padding 0.2s, box-shadow 0.2s;
 }
 
 nav.top {
-  padding: 10px 50%;
+  padding: 10px 20px;
   background-color: rgb(63, 63, 63);
-  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
   position: fixed;
-  transform: translateX(-50%);
-}
-
-nav.top a {
-  margin-left: 20px;
 }
 
 nav.scroll {
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px;
   background-color: #4d4d4d;
   width: 90%;
@@ -138,8 +135,11 @@ nav.scroll {
   border-radius: 20px;
   position: fixed;
   z-index: 999;
-  transform: translateX(-50%);
   box-shadow: 0px 0px 20px 0px rgba(85, 85, 85, 0.75);
+}
+
+nav .links{
+  width: 100%;
 }
 
 nav img {
